@@ -1,0 +1,4 @@
+function passwordValidation() {
+    const passwd = 
+
+}

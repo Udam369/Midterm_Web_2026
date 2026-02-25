@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/login_panel_style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="header0">
+            <h1>Login</h1>
+        </div>
+        <div>
+            <form class="reg_form" action="https://jsonplaceholder.typicode.com/users" method="post">
+
+                <!-- Practitioner ID  -->
+                <div class="form-group">
+                    <label for="prac_ID">Practitioner ID</label>
+                    <input type="text" name="id" id="ID" placeholder="Enter your practitioner ID" required>
+                </div>
+                
+                <!-- Role  -->
+                  <div class="form-group">
+                    <label for="role">Role</label>
+                    <select name="role" id="role" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option value="nurse">Nurse</option>
+                        <option value="admin">Admin</option>
+          
+                    </select>
+                </div>
+
+                <!-- Password  -->
+                 <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter password (min. 8 characters)" required minlength="8">
+                </div>
+
+                <div class="form-group">
+                    <Label for="shwPasswd">Show Password</Label>
+                    <input type="checkbox" name="toggle" id="toggle">
+                </div>
+
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>   
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/login_panel_script.js"></script>
+
+
+</body>
+</html>
